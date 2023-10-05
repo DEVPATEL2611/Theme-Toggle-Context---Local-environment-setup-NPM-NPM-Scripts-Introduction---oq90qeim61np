@@ -5,6 +5,7 @@ import { ThemeContext } from './components/ThemeProvider';
 
 const Main = () => {
     const {theme,setTheme} = useContext(ThemeContext);
+    
     return(
         <div className={"container "+`bg-${theme}`} id="themed-page">
             <p className={"txt-"+theme} id="themed-text-container">
